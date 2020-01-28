@@ -1,10 +1,10 @@
 <?php
 
   include('./classes/Honda.php');
+  require('./classes/inventory.php');
 
-  $car1 = new Honda('civic', 2, 'green', '25,0000');
+  $car1 = new Honda('civic', 2, 'green', '25,0000', new Inventory);
   $car1->statement();
-  echo "hello world";
 ?>
 
 <!doctype html>
