@@ -13,11 +13,7 @@ class Honda extends Car {
   }
 
   public function statement(){
-  echo "<h1>{$this->company} {$this->name} has {$this->doors} doors and the color is {$this->color}</h1>";
-  $this->drive();
-  }
-
-  protected function drive(){
-    echo "<h2>VROOM VROOM! </h2>";
+    echo "<h1>{$this->company} {$this->name} has {$this->doors} doors and the color is {$this->color}</h1>";
+    $this->drive();
   }
 }
