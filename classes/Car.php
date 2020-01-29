@@ -1,6 +1,8 @@
 <?php
 
-class Car {
+
+
+class Car extends Mechanic {
   public $doors = 4;
   public $color = "black";
   public static $states = [
@@ -18,5 +20,9 @@ class Car {
     foreach(self::$states as $state){
       echo "I've driven to ${state} <br>";
     }
+  }
+
+  public function getCarColor(){
+    return $this->color;
   }
 }

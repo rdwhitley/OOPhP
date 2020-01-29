@@ -1,5 +1,5 @@
 <?php
-require('Car.php');
+// require('Car.php');
 class Honda extends Car {
   public $doors = 4;
   public $color = "black";
@@ -18,5 +18,9 @@ class Honda extends Car {
     // $this->drive();
     echo $this->inventory->carTotal($this->company);
     echo $this->inventory->carsSold(5);
+  }
+
+  public function fixCar(){
+    return "hello world";
   }
 }
