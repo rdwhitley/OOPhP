@@ -17,5 +17,6 @@ class Honda extends Car {
     echo "<h1>{$this->company} {$this->name} has {$this->doors} doors and the color is {$this->color}</h1>";
     // $this->drive();
     echo $this->inventory->carTotal($this->company);
+    echo $this->inventory->carsSold(5);
   }
 }
