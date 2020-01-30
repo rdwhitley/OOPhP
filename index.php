@@ -1,9 +1,5 @@
 <?php
-  require('./classes/Mechanic.php');
-  require('./classes/inventory.php');
-  require('./classes/Car.php');
-  require('./classes/Honda.php');
-  require('./classes/Text.php');
+  require("vendor/autoload.php");
   
 
   $car1 = new Honda('civic', 2, 'green', '25,0000', new Inventory);
