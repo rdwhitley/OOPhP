@@ -3,11 +3,15 @@
   require('./classes/inventory.php');
   require('./classes/Car.php');
   require('./classes/Honda.php');
+  require('./classes/Text.php');
   
 
   $car1 = new Honda('civic', 2, 'green', '25,0000', new Inventory);
   $car1->statement();
   $car1->fixMyCar();
+
+  $text = new Text('I"m listening to SOCA');
+  $text->reverseIt()->print();
 ?>
 
 <!doctype html>
