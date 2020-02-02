@@ -1,13 +1,17 @@
 <?php
   require("vendor/autoload.php");
+  require("namespace/classes/car/name.php");
+  require("namespace/classes/user/name.php");
   
 
-  $car1 = new Honda('civic', 2, 'green', '25,0000', new Inventory);
-  $car1->statement();
-  $car1->fixMyCar();
+  use App\Car\Name as car;
+  use App\User\Name as user;
 
-  $text = new Text('I"m listening to SOCA');
-  $text->reverseIt()->print();
+  $user = new user('John');
+  $car = new car('Honda');
+
+  var_dump($user);
+  var_dump($car);
 ?>
 
 <!doctype html>
